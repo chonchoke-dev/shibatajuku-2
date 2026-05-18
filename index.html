@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lattice Diagrams for Math Research Presentation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Transfer System Lattices</h1>
+        <div class="qr-container">
+            <div id="qrcode"></div>
+            <p class="qr-caption" id="qrText">Scan to view full lattice diagrams</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: Dp^2 Lattice -->
+        <section id="dp2">
+            <h2>Dp² Lattice</h2>
+            <img src="dp2.png" alt="Dp² Lattice Diagram" class="lattice-img">
+            <p class="caption">Transfer system lattice for Dp²</p>
+        </section>
+
+        <!-- Section 2: Dic_p Lattice -->
+        <section id="dicp">
+            <h2>Dicₚ Lattice</h2>
+            <img src="dicp.png" alt="Dicₚ Lattice Diagram" class="lattice-img">
+            <p class="caption">Transfer system lattice for dicyclic group</p>
+        </section>
+
+        <!-- Section 3: F5 Lattice -->
+        <section id="f5">
+            <h2>F₅ Large Lattice</h2>
+            <img src="f5.png" alt="F₅ Large Lattice Diagram" class="lattice-img">
+            <p class="caption">Large transfer system lattice for F₅</p>
+        </section>
+    </main>
+
+    <script>
+        // Generate QR code for the current URL
+        // If the page is opened locally, it defaults to the local path.
+        // Once hosted, it will automatically point to the hosted URL.
+        const currentUrl = window.location.href;
+        new QRCode(document.getElementById("qrcode"), {
+            text: currentUrl,
+            width: 150,
+            height: 150,
+            colorDark: "#2d5af7",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+    </script>
+</body>
+</html>
