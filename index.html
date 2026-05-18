@@ -1,57 +1,251 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lattice Diagrams for Math Research Presentation</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="柴田塾は、英語が苦手な中高生と部活生を支えるオンライン英語塾です。現役高校教師が基礎理解、学習計画、勉強習慣づくりをサポートします。">
+  <title>柴田塾 | 「わからない」を「わかる」に変える英語塾</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Transfer System Lattices</h1>
-        <div class="qr-container">
-            <div id="qrcode"></div>
-            <p class="qr-caption" id="qrText">Scan to view full lattice diagrams</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="柴田塾 トップへ">
+        <span class="brand-mark">柴</span>
+        <span class="brand-copy">
+          <span class="brand-name">柴田塾</span>
+          <span class="brand-subtitle">Online English Coaching</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="サイト内メニュー">
+        <a href="#about">塾について</a>
+        <a href="#features">特徴</a>
+        <a href="#lessons">指導内容</a>
+        <a href="#pricing">料金</a>
+        <a href="#contact">無料相談</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Shibata Juku</p>
+          <h1>「わからない」を、<br>「わかる」に。</h1>
+          <div class="hero-message">
+            <p>
+              柴田塾は、<br>
+              英語が苦手な中高生のための<br>
+              オンライン英語塾です。
+            </p>
+            <p>
+              現役高校教師として、<br>
+              部活と勉強を両立する生徒を<br>
+              本気でサポートします。
+            </p>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">無料相談はこちら</a>
+            <a class="button button-outline" href="#lessons">指導内容を見る</a>
+          </div>
         </div>
-    </header>
+        <aside class="support-card" aria-label="柴田塾がサポートする生徒">
+          <p class="support-title">このような生徒を支えます</p>
+          <ul class="check-list">
+            <li>英語の授業についていけない</li>
+            <li>部活が忙しく勉強時間が足りない</li>
+            <li>何から始めればいいかわからない</li>
+            <li>偏差値30〜50台から伸ばしたい</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
 
-    <main>
-        <!-- Section 1: Dp^2 Lattice -->
-        <section id="dp2">
-            <h2>Dp² Lattice</h2>
-            <img src="dp2.png" alt="Dp² Lattice Diagram" class="lattice-img">
-            <p class="caption">Transfer system lattice for Dp²</p>
-        </section>
+    <section id="about" class="section about-section">
+      <div class="container two-column">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>英語が苦手な生徒が、英語をできるようになるために。</h2>
+        </div>
+        <div class="text-block">
+          <p>
+            柴田塾は、<br>
+            “英語が苦手な生徒が、英語をできるようになる”<br>
+            ことを一番大切にしているオンライン英語塾です。
+          </p>
+          <p>特に、</p>
+          <ul class="simple-list">
+            <li>部活が忙しくて勉強時間が取れない</li>
+            <li>英語の授業についていけない</li>
+            <li>何から始めればいいかわからない</li>
+            <li>塾に行っても理解できなかった</li>
+            <li>偏差値30〜50台から逆転したい</li>
+          </ul>
+          <p>そんな中高生を全力でサポートします。</p>
+        </div>
+      </div>
+    </section>
 
-        <!-- Section 2: Dic_p Lattice -->
-        <section id="dicp">
-            <h2>Dicₚ Lattice</h2>
-            <img src="dicp.png" alt="Dicₚ Lattice Diagram" class="lattice-img">
-            <p class="caption">Transfer system lattice for dicyclic group</p>
-        </section>
+    <section id="features" class="section tint-section">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="eyebrow">Features</p>
+          <h2>柴田塾の特徴</h2>
+          <p>苦手を責めず、理解の順番を整える。限られた時間でも続けられる学習の形を一緒につくります。</p>
+        </div>
+        <div class="card-grid three-cards">
+          <article class="card feature-card">
+            <span class="card-label">01</span>
+            <h3>英語が苦手な生徒専門</h3>
+            <p>
+              基礎から丁寧に。<br>
+              「なぜそうなるのか」を大切にしながら、
+              英文法・英文解釈・長文読解をわかりやすく指導します。
+            </p>
+          </article>
+          <article class="card feature-card">
+            <span class="card-label">02</span>
+            <h3>部活生向け学習設計</h3>
+            <p>
+              限られた時間の中でも、
+              効率よく伸ばす学習法をサポート。
+            </p>
+            <p>スキマ時間の活用や勉強計画まで一緒に考えます。</p>
+          </article>
+          <article class="card feature-card">
+            <span class="card-label">03</span>
+            <h3>現役高校教師による指導</h3>
+            <p>
+              学校現場を知っているからこそ、
+              定期考査・模試・共通テストまで、
+              本当に必要な勉強法を指導できます。
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        <!-- Section 3: F5 Lattice -->
-        <section id="f5">
-            <h2>F₅ Large Lattice</h2>
-            <img src="f5.png" alt="F₅ Large Lattice Diagram" class="lattice-img">
-            <p class="caption">Large transfer system lattice for F₅</p>
-        </section>
-    </main>
+    <section id="lessons" class="section lessons-section">
+      <div class="container two-column">
+        <div class="section-heading">
+          <p class="eyebrow">Lessons</p>
+          <h2>指導内容</h2>
+          <p>基礎の抜けを確認しながら、学校の授業・定期考査・受験準備へつなげます。</p>
+        </div>
+        <div class="card lesson-card">
+          <ul class="lesson-list" aria-label="指導内容一覧">
+            <li>英文法基礎</li>
+            <li>英文解釈</li>
+            <li>長文読解</li>
+            <li>英検対策</li>
+            <li>定期考査対策</li>
+            <li>共通テスト基礎</li>
+            <li>学習計画サポート</li>
+            <li>勉強法指導</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-    <script>
-        // Generate QR code for the current URL
-        // If the page is opened locally, it defaults to the local path.
-        // Once hosted, it will automatically point to the hosted URL.
-        const currentUrl = window.location.href;
-        new QRCode(document.getElementById("qrcode"), {
-            text: currentUrl,
-            width: 150,
-            height: 150,
-            colorDark: "#2d5af7",
-            colorLight: "#ffffff",
-            correctLevel: QRCode.CorrectLevel.H
-        });
-    </script>
+    <section id="format" class="section tint-section">
+      <div class="container card format-card">
+        <div class="section-heading">
+          <p class="eyebrow">Format</p>
+          <h2>オンライン個別指導</h2>
+          <p class="lead-text">Zoom等を利用して全国対応。</p>
+        </div>
+        <div class="format-detail">
+          <ul class="check-list">
+            <li>1対1指導</li>
+            <li>少人数指導</li>
+            <li>LINE質問対応</li>
+          </ul>
+          <p>部活終わりの夜でも受講可能。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section pricing-section">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="eyebrow">Pricing</p>
+          <h2>料金</h2>
+          <p>必要なサポート量に合わせて選べる、わかりやすいコース設計です。</p>
+        </div>
+        <div class="card-grid pricing-grid">
+          <article class="card price-card featured-price">
+            <span class="card-label">Plan 1</span>
+            <h3>個別指導コース</h3>
+            <p class="price">月額 19,800円<span>（税込）</span></p>
+            <ul class="simple-list compact-list">
+              <li>週1回（60〜90分）</li>
+              <li>学習計画作成</li>
+              <li>LINE質問対応</li>
+              <li>定期考査サポート</li>
+              <li>英文添削対応</li>
+            </ul>
+          </article>
+          <article class="card price-card">
+            <span class="card-label">Plan 2</span>
+            <h3>少人数クラス（準備中）</h3>
+            <p class="price">月額 9,800円<span>（税込）</span></p>
+            <ul class="simple-list compact-list">
+              <li>グループ授業</li>
+              <li>英文法・読解</li>
+              <li>学習法サポート</li>
+            </ul>
+          </article>
+          <article class="card price-card">
+            <span class="card-label">Plan 3</span>
+            <h3>無料相談・体験授業</h3>
+            <p class="price price-note">まずは相談から</p>
+            <ul class="simple-list compact-list">
+              <li>勉強法相談</li>
+              <li>英語学習相談</li>
+              <li>学習計画相談</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section mission-section" aria-labelledby="mission-title">
+      <div class="container mission-inner">
+        <p class="eyebrow">Mission</p>
+        <h2 id="mission-title">才能ではなく、<br>正しい順番と継続。</h2>
+        <p class="mission-main">「わかる」から、<br>「できる」へ。</p>
+        <p>
+          柴田塾は、<br>
+          その成長を一緒につくる塾です。
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-card">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>無料相談はこちら</h2>
+          <p>英語の状況、部活との両立、家庭学習の悩みなど、まずは現在地を一緒に整理します。</p>
+        </div>
+        <a class="button button-primary" href="mailto:info@example.com">メールで相談する</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-name">柴田塾</p>
+        <p>Online English Coaching</p>
+      </div>
+      <div>
+        <p>Contact</p>
+        <a href="mailto:info@example.com">info@example.com</a>
+      </div>
+      <p class="copyright">&copy; 2026 Shibata Juku. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
